@@ -12,7 +12,7 @@
 
 void generatekurung(int n, int buka, int tutup, char s[], int idx) {
     if (idx == 2 * n) {
-        s[idx] = '\0'; 
+        s[idx] = '\0';
         printf("%s\n", s);
         return;   
     }
@@ -28,7 +28,7 @@ void generatekurung(int n, int buka, int tutup, char s[], int idx) {
 
 // Reference kode catalan: https://www.tutorialspoint.com/article/c-program-for-nth-catalan-number 
 // Catalan itu buat menghitung number valid paranthesis expression (https://www.geeksforgeeks.org/dsa/find-number-valid-parentheses-expressions-given-length/)
-int catalan(int n) {
+int catalan(int n) {    
     if (n <= 1) 
         return 1;
     int res = 0;
@@ -42,6 +42,6 @@ int main() {
     scanf("%d", &n);
     char s[50]; 
     generatekurung(n, 0, 0, s, 0);
-    printf("TOTAL: %d", catalan(n));
+    printf("TOTAL %d", catalan(n));
     return 0;
 }
